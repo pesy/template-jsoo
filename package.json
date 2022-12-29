@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "Starter Reason Esy Pesy Project",
   "esy": {
-    "build": "dune build -p #{self.name}",
-    "buildDev": "pesy build",
+    "build": "dune build --profile release ./src/bin/<PACKAGE_NAME_UPPER_CAMEL>App.bc.js",
+    "buildDev": "dune build --profile dev ./src/bin/<PACKAGE_NAME_UPPER_CAMEL>App.bc.js",
     "NOTE": "Optional release Section. Customizes result of `esy release`",
     "release": {
       "rewritePrefix": true,
