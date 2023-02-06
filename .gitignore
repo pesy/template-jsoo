@@ -3,6 +3,8 @@ node_modules/
 _build
 _esy
 _release
+dist/
+*~
 *.byte
 *.native
 *.install

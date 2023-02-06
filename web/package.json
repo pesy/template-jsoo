@@ -1,0 +1,19 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "rm -rf dist; mkdir -p dist; find ../_esy -type f -name '*.js' -exec cp {} ./dist/ \\; ; webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
