@@ -16,6 +16,14 @@ Then run the `esy` command from this project root to install and build depenenci
 
     % esy
 
+To run the project, run the following watchers,
+
+1. esy dune build -w ./src/bin/<PACKAGE_NAME_UPPER_CAMEL>App.bc.js
+2. cd web/ && npm run start
+3. cd web/ && sh ./watchman.sh
+
+Note, you'll need [watchman](https://facebook.github.io/watchman/docs/install.html)
+
 Now you can run your editor within the environment (which also includes merlin):
 
     % esy $EDITOR
