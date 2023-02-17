@@ -20,7 +20,15 @@
     "github": "pesy/template-jsoo"
   },
   "buildDirs": {
-    "src/lib": {},
+    "src/lib": {
+      "imports": [
+        "Js_of_ocaml = require('js_of_ocaml')"
+      ],
+      "preprocess": [
+        "pps",
+        "js_of_ocaml-ppx"
+      ]
+    },
     "src/bin": {
       "imports": [
         "Library = require('<PACKAGE_NAME_FULL>/src/lib')"
