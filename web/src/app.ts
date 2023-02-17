@@ -16,7 +16,7 @@ async function loadJSBundle(path) {
 }
 
 async function main() {
-  let app = "JsooYojsonApp";
+  let app = "<PACKAGE_NAME_UPPER_CAMEL>App";
   let path = "";
   await loadJSBundle(`${path}/${app}.bc.runtime.js`);
   await loadJSBundle(`${path}/${app}.bc.js`);
