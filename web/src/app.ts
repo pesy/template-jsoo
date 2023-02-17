@@ -1,7 +1,7 @@
 import printMe from "./print.ts";
 
 async function loadJSBundle(path) {
-  return new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     // TODO(prometheansacrifice) Handle error while loading JS
     const script = document.createElement("script");
     script.src = path;
