@@ -16,6 +16,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Hot Module Replacement",
+      template: "index.html",
     }),
   ],
   output: {
