@@ -1,5 +1,7 @@
 #! /bin/sh
 
+watchman watch ../_build/default/src/bin
+
 watchman -j <<-EOT
 ["trigger", "../_build/default/src/bin", {
   "name": "cp-jsoo-js",
