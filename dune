@@ -1,1 +1,1 @@
-(dirs \ web)
+(dirs :standard \ web)
